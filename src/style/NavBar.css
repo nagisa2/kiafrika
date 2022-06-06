@@ -1,0 +1,40 @@
+.nav-container {
+    height: 100%;
+    padding: 0 20px ;
+    padding-top: 40px;
+    border-radius:  0 24px  24px 0 ;
+    background-color: var(--bg-color-light);
+
+}
+
+.nav-list {
+    row-gap: 40px;
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.link {
+    display: flex;
+    padding: 10px;
+    column-gap: 10px;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--py-color-light);
+    font-family: var(--body-font);
+}
+
+.link:hover {
+    color: var(--py-color-dark);
+    transition: 2s linear ease-in;
+    background-color: var(--bg-color-dark);
+}
+
+.link:hover .icon-link {
+    color: var(--py-color-dark);
+}
+.icon-link {
+    color: var(--py-color-light);
+}

@@ -1,0 +1,15 @@
+.rating-container {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.icon-rating {
+    color: var(--sy-color);
+    width: 20px;
+    height: 20px;
+}
+
+.rating-container span {
+    font-size: .9rem;
+}

@@ -1,0 +1,126 @@
+.cart-container{
+    gap: 20px;
+    height: 100%;
+    display: flex;
+    min-width: 370px;
+    padding: 40px 20px;
+    flex-direction: column;
+    border-radius:  24px 0 0 24px;
+    background-color: var(--bg-color-light);
+ 
+}
+
+.cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-flow {
+    overflow-y: auto;
+    margin-top: 12px;
+    height: fit-content;
+    transition: 2s linear ease-out;
+} 
+
+.cart-item {
+    display: flex;
+    padding: 12px;
+    max-height:100px;
+    border-radius: 12px;
+    justify-content: space-between;
+    background-color: var(--bg-color-dark);
+}
+
+.cart-card {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.cart-img-wrapper {
+    width: 70px;
+    display:flex;
+    height: 70px;
+    border-radius: 8px;
+    align-items: center;
+    background-color: var(--py-color-light);
+}
+
+.cart-img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius:inherit;
+    object-position: center;
+  
+}
+
+.cart-card-info {
+    display: flex;
+    row-gap: 0.2em;
+    flex-direction: column;
+
+}
+
+.cart-card-info h2 {
+    font-weight: 400;
+}
+
+.cart-card-info h3  {
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+
+
+
+.cart-details {
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    padding: 2px;
+    display: flex;
+    cursor: pointer;
+    border-radius:4px;
+    align-items:center;
+    justify-content: center;
+ 
+}
+
+.item:hover {
+    background-color: var(--bg-color-light);
+}
+
+.cart-price-list {
+    display: flex;
+    row-gap: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: var(--bg-color-dark);
+}
+
+.price-list {
+    color: var(--py-color-light);
+}
+
+.price-list , .total-price-list {
+ display: flex;
+ justify-content: space-between;
+}
+
+.cart-btn {
+    display:flex;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-color-light);
+    background-color: var(--sy-color);
+    
+}
+

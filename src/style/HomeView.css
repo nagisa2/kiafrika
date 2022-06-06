@@ -1,0 +1,175 @@
+.home {
+    row-gap:40px;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.home-panel {   
+    height: 350px;
+    padding: 20px;
+    border-radius: 24px;
+    object-fit: contain;
+    object-position: center;
+  
+}
+
+.panel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    object-position: center;
+   
+}
+
+.home-details {
+    left: 30px;
+    bottom: 260px;
+    row-gap: 30px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.input-wrapper {
+    width: 30%;
+    display: flex;
+    padding: 6px 5px;
+    column-gap: 10px;
+    border-radius:6px;
+    align-items: center;
+    background-color: var(--bg-color-light);
+
+}
+
+.input-panel {
+    border: none;
+    outline: none;
+    width: 100%;
+
+}
+
+.input-panel:focus {
+    border: none;
+}
+
+.panel-body {
+    width: 30%;
+}
+.panel-body h1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--bg-color-light);
+
+}
+
+.panel-btn {
+    background-color: var(--sy-color);
+    color: var(--bg-color-light);
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    width: 10%;
+}
+
+.service-container , .sales-container {
+    display: flex;
+    row-gap: 10px;
+    padding-left: 20px;
+    flex-direction: column;
+}
+
+.service-wrapper {
+    width:350px;
+    height:110px;
+    display: flex;
+    padding: 10px;
+    column-gap: 10px;
+    border-radius: 12px;
+    justify-content: space-between;
+    background-color: var(--bg-color-light);
+   
+ }
+ 
+ .card-img-wrapper {
+     height: 100;
+     width: 100px;
+     border-radius: 8px;
+     background-color: var(--py-color-light);
+
+ }
+
+ .service-img {
+     width: inherit;
+     height: inherit;
+     object-fit: cover;
+     object-fit: cover;
+     border-radius: 8px;
+     object-position: center;
+     object-position: center;
+    
+ }
+
+ .card-info {
+     display: flex;
+     row-gap: .5rem;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ .card-info h2 , h3 {
+     font-weight: 400;
+     font-size: .9rem;
+ }
+
+
+.sale-wrapper {
+    width: 350px;
+    height: 350px;
+    border-radius: 12px;
+    background-color: var(--bg-color-light);
+
+}
+
+.sale-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.sales-image-wrapper {
+    height: 190px;
+    border-radius:12px 12px 0 0 ;
+    background-color: var(--py-color-light);
+}
+
+.sales-img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: center;
+    border-radius:12px 12px 0 0 ;
+}
+
+.mid-rating-wrapper {
+    position: relative;
+    bottom: 10px;
+    left: 30px;
+}
+
+.sales-info {
+    display: flex;
+    row-gap: 10px;
+    min-height: 100px;
+    padding: 10px 30px;
+    flex-direction: column;
+   
+   
+}
+
+
+
+
+
+
