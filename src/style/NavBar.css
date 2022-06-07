@@ -2,6 +2,7 @@
     height: 100%;
     padding: 0 20px ;
     padding-top: 40px;
+    box-shadow: var(--shadow);
     border-radius:  0 24px  24px 0 ;
     background-color: var(--bg-color-light);
 

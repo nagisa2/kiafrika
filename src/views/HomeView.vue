@@ -41,26 +41,16 @@
       </div>
     </div>
     <div class="sales-container">
-      <h1>Best Sell</h1>
-      <div class="sale-wrapper">
-        <div class="sale-card">
-          <div class="sales-image-wrapper">
-            <img src="" alt="" class="sales-img" />
-          </div>
-          <div class="mid-rating-wrapper">
-            <MyRating />
-          </div>
-          <div class="sales-info">
-            <h2>salesprice</h2>
-            <h3>sales description</h3>
-          </div>
-        </div>
+      <div class="sales-header">
+        <h1>Best Sell</h1>
+        <a href=""><span>See all</span></a>
       </div>
+      <MySale />
     </div>
   </div>
 </template>
 <script setup>
-import MyRating from "@/components/MyRating.vue";
+import MySale from "../components/MySale.vue";
 </script>
 <style>
 @import "@/style/HomeView.css";

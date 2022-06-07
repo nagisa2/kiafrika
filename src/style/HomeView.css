@@ -77,7 +77,7 @@
 .service-container , .sales-container {
     display: flex;
     row-gap: 10px;
-    padding-left: 20px;
+    padding: 0 20px;
     flex-direction: column;
 }
 
@@ -88,8 +88,10 @@
     padding: 10px;
     column-gap: 10px;
     border-radius: 12px;
+    box-shadow: var(--shadow);
     justify-content: space-between;
     background-color: var(--bg-color-light);
+  
    
  }
  
@@ -124,50 +126,7 @@
      font-size: .9rem;
  }
 
-
-.sale-wrapper {
-    width: 350px;
-    height: 350px;
-    border-radius: 12px;
-    background-color: var(--bg-color-light);
-
-}
-
-.sale-card {
-    display: flex;
-    flex-direction: column;
-}
-
-.sales-image-wrapper {
-    height: 190px;
-    border-radius:12px 12px 0 0 ;
-    background-color: var(--py-color-light);
-}
-
-.sales-img {
-    width: inherit;
-    height: inherit;
-    object-fit: cover;
-    object-position: center;
-    border-radius:12px 12px 0 0 ;
-}
-
-.mid-rating-wrapper {
-    position: relative;
-    bottom: 10px;
-    left: 30px;
-}
-
-.sales-info {
-    display: flex;
-    row-gap: 10px;
-    min-height: 100px;
-    padding: 10px 30px;
-    flex-direction: column;
-   
-   
-}
-
+ 
 
 
 

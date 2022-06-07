@@ -1,0 +1,64 @@
+.sales-responsive {
+    display: flex;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  
+}
+
+.sales-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sales-header a span {
+    text-decoration: underline;
+    color: var(--py-color-dark);
+}
+
+.sale-wrapper {
+   width: 350px;
+   height: 330px;
+   border-radius: 12px;
+   box-shadow: var(--shadow);
+   background-color: var(--bg-color-light);
+
+}
+
+.sale-card {
+   display: flex;
+   flex-direction: column;
+}
+
+.sales-image-wrapper {
+   height: 190px;
+   box-shadow: var(--shadow);
+   border-radius:12px 12px 0 0 ;
+   background-color: var(--py-color-light);
+}
+
+.sales-img {
+   width: inherit;
+   height: inherit;
+   object-fit: cover;
+   object-position: center;
+   border-radius:12px 12px 0 0 ;
+}
+
+.mid-rating-wrapper {
+   position: relative;
+   bottom: 10px;
+   left: 30px;
+}
+
+.sales-info {
+   display: flex;
+   row-gap: 10px;
+   min-height: 100px;
+   padding: 10px 30px;
+   flex-direction: column;
+  
+  
+}

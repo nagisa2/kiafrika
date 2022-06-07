@@ -1,0 +1,27 @@
+.settings {
+    padding: 50px;
+}
+
+.user-settings , .admin-info{
+    padding: 40vh;   
+}
+
+.user-settings h1 , .admin-settings h1 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.profile-pic {
+ display: flex;
+ justify-content: flex-end;
+}
+
+.admin-pic {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: var(--py-color-light);
+
+}
+

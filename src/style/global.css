@@ -15,6 +15,9 @@
     /* fonts used */
     --body-font: 'Lato', sans-serif;
     --header-font:  'Montserrat', sans-serif;
+
+    /* shadow */
+    --shadow:  rgba(230, 231, 231, 0.2) 0px 8px 24px;
 }
 
 body {
