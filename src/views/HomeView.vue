@@ -29,28 +29,42 @@
     </div>
     <div class="service-container">
       <h1>Services</h1>
-      <div class="service-wrapper">
-        <div class="card-info">
-          <h2>service name</h2>
-          <h3>service company</h3>
-          <MyRating />
-        </div>
-        <div class="card-img-wrapper">
-          <img src="" alt="" class="service-img" />
+      <div class="service-layout">
+        <div
+          class="service-wrapper"
+          v-for="(
+            { serviceImg, serviceName, serviceCompany, serviceRating }, index
+          ) in serviceData"
+          :key="index"
+        >
+          <div class="card-info">
+            <h2>{{ serviceName }}</h2>
+            <h3>{{ serviceCompany }}</h3>
+            <MyRating :ratings="serviceRating" />
+          </div>
+          <div class="card-img-wrapper">
+            <img :src="serviceImg" :alt="serviceName" class="service-img" />
+          </div>
         </div>
       </div>
     </div>
     <div class="sales-container">
       <div class="sales-header">
-        <h1>Best Sell</h1>
+        <h1>Best Sales</h1>
         <a href=""><span>See all</span></a>
       </div>
-      <MySale />
+      <div class="sales-layout">
+        <MySale />
+      </div>
     </div>
   </div>
 </template>
 <script setup>
-import MySale from "../components/MySale.vue";
+import MyRating from "@/components/MyRating.vue";
+import MySale from "@/components/MySale.vue";
+import { useServiceStore } from "@/stores/service";
+const serviceStore = useServiceStore();
+const serviceData = serviceStore.serviceData;
 </script>
 <style>
 @import "@/style/HomeView.css";

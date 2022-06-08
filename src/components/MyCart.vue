@@ -1,8 +1,8 @@
 <template>
   <div class="cart-container">
-    <div class="cart-header">
+    <div class="cart-header cart-header-toggle">
       <h1>My Bag</h1>
-      <div class="cart-icon">
+      <div class="cart-icon" @click="cart()">
         <svg class="icon icon-cart" viewBox="0 0 24 24" v-if="!isFull">
           <path
             fill="currentColor"
@@ -17,30 +17,32 @@
         </svg>
       </div>
     </div>
-    <div class="cart-flow">
-      <div class="cart-item">
-        <div class="cart-card">
-          <div class="cart-img-wrapper">
-            <img src="" alt="" class="cart-img" />
+    <div class="cart-flow-toggle">
+      <div class="cart-flow">
+        <div class="cart-item">
+          <div class="cart-card">
+            <div class="cart-img-wrapper">
+              <img src="" alt="" class="cart-img" />
+            </div>
+            <div class="cart-card-info">
+              <h2>Item name</h2>
+              <h3>price</h3>
+            </div>
           </div>
-          <div class="cart-card-info">
-            <h2>Item name</h2>
-            <h3>price</h3>
+          <div class="cart-details">
+            <div class="item">+</div>
+            <div class="item">1</div>
+            <div class="item">-</div>
           </div>
-        </div>
-        <div class="cart-details">
-          <div class="item">+</div>
-          <div class="item">1</div>
-          <div class="item">-</div>
         </div>
       </div>
-    </div>
-    <div class="cart-price-list">
-      <div class="price-list">Subtotal <span>SubPrice</span></div>
-      <div class="price-list">Shipment <span>shipPrice</span></div>
-      <div class="price-list">Discount<span>discount</span></div>
-      <div class="total-price-list">Total <span>Total</span></div>
-      <div class="cart-btn">Checkout</div>
+      <div class="cart-price-list">
+        <div class="price-list">Subtotal <span>SubPrice</span></div>
+        <div class="price-list">Shipment <span>shipPrice</span></div>
+        <div class="price-list">Discount<span>discount</span></div>
+        <div class="total-price-list">Total <span>Total</span></div>
+        <div class="cart-btn">Checkout</div>
+      </div>
     </div>
   </div>
 </template>

@@ -17,12 +17,26 @@
     justify-content: space-between;
 }
 
+
+.cart-icon {
+    cursor: pointer;
+}
+
+
 .cart-flow {
     overflow-y: auto;
     margin-top: 12px;
     height: fit-content;
     transition: 2s linear ease-out;
 } 
+
+/* toggle  cart */
+
+
+.cart-flow-toggle {
+
+    display: none;
+}
 
 .cart-item {
     display: flex;
@@ -71,8 +85,6 @@
     font-weight: 400;
     font-size: .8rem;
 }
-
-
 
 
 .cart-details {
