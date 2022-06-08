@@ -1,4 +1,4 @@
-.cart-container{
+.cartContainer{
     gap: 20px;
     height: 100%;
     display: flex;
@@ -11,7 +11,7 @@
  
 }
 
-.cart-header {
+.cartHeader {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,7 +22,6 @@
     cursor: pointer;
 }
 
-
 .cart-flow {
     overflow-y: auto;
     margin-top: 12px;
@@ -30,13 +29,24 @@
     transition: 2s linear ease-out;
 } 
 
-/* toggle  cart */
+/*-- start of toggle cart --*/
 
+.cartContainerToggle {
+    padding: 40px 20px;
+    min-width: fit-content; 
+    background-color: var(--bg-color-dark);
+}
 
-.cart-flow-toggle {
+.cartFlowToggle {
+    display: none;
+}
+
+.cartHeaderToggle h1 {
 
     display: none;
 }
+
+/* --end of toggle cart -- */
 
 .cart-item {
     display: flex;

@@ -9,7 +9,7 @@ export const useSalesStore = defineStore("salesStore", {
         salesDescription: "We offer design such as logo, branding",
         salesName: "Graphic design",
         salesCompany: "Kiafrica",
-        salesRating: "4.8",
+        salesRating: 4.8,
         salesPrice: "750",
       },
       {
@@ -18,7 +18,7 @@ export const useSalesStore = defineStore("salesStore", {
         salesDescription: "We offer printing of banners, stickers etc",
         SalesName: "Large format printing",
         salesCompany: "Digital creation",
-        salesRating: "4.5",
+        salesRating: 4.5,
         salesPrice: "750",
       },
       {
@@ -28,8 +28,8 @@ export const useSalesStore = defineStore("salesStore", {
           "Come and capture the momories of your loved ones with us",
         salesName: "Video and photoshoot",
         salesCompany: "Smart studio",
-        salesRating: "4.4",
-        salesPrice: "750",
+        salesRating: 4.4,
+        salesPrice: 750,
       },
       {
         salesImg:
@@ -37,7 +37,7 @@ export const useSalesStore = defineStore("salesStore", {
         salesDescription: "Create apps and website for your business.",
         salesName: "Developer",
         salesCompany: "Kiafrika",
-        salesRating: "4.7",
+        salesRating: 4.7,
         salesPrice: "750",
       },
     ],
