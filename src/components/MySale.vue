@@ -11,12 +11,12 @@
         <div class="sales-image-wrapper">
           <img :src="salesImg" :alt="salesName" class="sales-img" />
         </div>
-        <div class="mid-rating-wrapper">
-          <MyRating :ratings="salesRating" />
-        </div>
         <div class="sales-info">
-          <h2>Ksh: {{ salesPrice }}</h2>
           <h3>{{ salesDescription }}</h3>
+          <div class="sales-mid">
+            <MyRating :ratings="salesRating" />
+            <h2>Ksh: {{ salesPrice }}</h2>
+          </div>
         </div>
       </div>
     </div>

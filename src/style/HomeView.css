@@ -94,7 +94,9 @@
     padding: 10px;
     column-gap: 10px;
     border-radius: 12px;
+    text-decoration: none;
     box-shadow: var(--shadow);
+    color: var(--py-color-dark);
     justify-content: space-between;
     background-color: var(--bg-color-light);
   

@@ -1,0 +1,49 @@
+.myservice-container {
+    display: flex;
+    padding-top: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.myservice-wrapper {
+    background-color: var(--bg-color-light);
+    box-shadow:var(--shadow);
+    height: fit-content;
+    border-radius:24px;
+    min-height: 400px;
+    width: 390px;
+}
+
+.myservice-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius:24px 24px 0 0;
+    background-color: var(--py-color-light);
+    
+}
+
+.myservice-info {
+    display: flex;
+    row-gap: 10px;
+    padding: 15px 10px;
+    flex-direction: column;
+}
+
+.myservice-details {
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.myservice-btn {
+    background-color: var(--sy-color);
+    color: var(--bg-color-light);
+    border-radius: 8px;
+    padding: 10px 30px;
+    text-align: center;
+    cursor: pointer;
+}

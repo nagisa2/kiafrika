@@ -47,18 +47,21 @@
    border-radius:12px 12px 0 0 ;
 }
 
-.mid-rating-wrapper {
-   position: relative;
-   bottom: 10px;
-   left: 30px;
-}
-
 .sales-info {
    display: flex;
    row-gap: 10px;
    min-height: 100px;
-   padding: 10px 30px;
+   padding: 20px 10px;
    flex-direction: column;
   
-  
 }
+
+.sales-mid {
+   display: flex;
+   justify-content: space-between;
+  }
+  
+  .sales-mid h2 {
+     font-size:.9rem;
+     font-weight: 400;
+  }

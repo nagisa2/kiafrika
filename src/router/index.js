@@ -10,6 +10,12 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: "/:id",
+      name: "service",
+      props: true,
+      component: () => import("../components/MyService.vue"),
+    },
+    {
       path: "/message",
       name: "message",
       component: () => import("../views/MessageView.vue"),

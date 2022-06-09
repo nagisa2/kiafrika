@@ -30,12 +30,16 @@
     <div class="service-container">
       <h1>Services</h1>
       <div class="service-layout">
-        <div
+        <RouterLink
           class="service-wrapper"
-          v-for="(
-            { serviceImg, serviceName, serviceCompany, serviceRating }, index
-          ) in serviceData"
-          :key="index"
+          v-for="{
+            serviceImg,
+            serviceName,
+            serviceCompany,
+            serviceRating,
+          } in serviceData"
+          :key="serviceName"
+          :to="`${serviceName}`"
         >
           <div class="card-info">
             <h2>{{ serviceName }}</h2>
@@ -45,7 +49,7 @@
           <div class="card-img-wrapper">
             <img :src="serviceImg" :alt="serviceName" class="service-img" />
           </div>
-        </div>
+        </RouterLink>
       </div>
     </div>
     <div class="sales-container">
@@ -62,6 +66,7 @@
 <script setup>
 import MyRating from "@/components/MyRating.vue";
 import MySale from "@/components/MySale.vue";
+import { RouterLink } from "vue-router";
 import { useServiceStore } from "@/stores/service";
 const serviceStore = useServiceStore();
 const serviceData = serviceStore.serviceData;
