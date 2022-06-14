@@ -138,7 +138,7 @@
         </svg>
         Notification
       </RouterLink>
-      <RouterLink to="/about" class="link">
+       <RouterLink to="/about" class="link">
         <svg class="icon icon-link" viewBox="0 0 24 24">
           <path
             fill="currentColor"

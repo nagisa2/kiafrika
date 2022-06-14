@@ -1,9 +1,14 @@
+@media screen {
+
 .about-container {
-    padding: 40vh;
+    height: 100vh;
     display: flex;
     row-gap: 30px;
+    padding: 70px 10px;
     text-align: center;
+    align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .about-info , .social {
@@ -14,7 +19,7 @@
 
 .about-info h1 , .social h1 {
     text-transform: capitalize;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .social-wrapper {
@@ -35,6 +40,35 @@
 }
 
 .social-links span {
+    font-size: .7rem;
+}
+
+.social-links:hover span {
+    display: block;
+    color: var(--sy-color);
+}
+
+.social-link {
+    width: 28px;
+    height: 28px;
+}
+
+.social-links:hover .social-link {
+    display: block;
+    color: var(--sy-color);
+}
+
+    
+}
+
+@media only screen and (min-width:49.0em) {
+
+.about-info h1 , .social h1 {
+    font-size: 1.4rem;
+}
+
+
+.social-links span {
     font-size: 1rem;
 }
 
@@ -51,4 +85,6 @@
 .social-links:hover .social-link {
     display: block;
     color: var(--sy-color);
+}
+
 }

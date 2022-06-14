@@ -10,7 +10,6 @@
       <MyCart />
     </div>
   </div>
-  >
 </template>
 
 <script setup>

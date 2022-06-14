@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600&family=Montserrat:wght@400;700&display=swap');
+@media screen {
+
+
 *{
 
     box-sizing: border-box;
@@ -47,26 +50,82 @@ h1,h2,h3,h4,h5,h6 {
     bottom: 0;
     display: flex;
     position: fixed;
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: hidden;
-}   
-
-.navbar, .content , .cart {
-    float: left; 
 }
 
-.navbar, .content , .cart::after {
-    content: "";
-    display: table;
-    clear: both;
-   
-}
 
 .content {
     width: 100%;
 }
 
-
 .navbar {
-    height: 100%;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.cart {
+    display: none;
+}
+
+    
+}
+
+@media screen {
+    
+}
+
+/* ipad/tablet */
+@media only screen and (min-width:48.0em){
+
+}
+
+
+@media only screen and (min-width:49.0em) {
+
+    .navbar, .content , .cart {
+        float: left; 
+    }
+    
+    .navbar, .content , .cart::after {
+        content: "";
+        display: table;
+        clear: both;
+       
+    }
+    
+    .content {
+        width: 100%;
+    }
+    
+    
+    .navbar {
+        position: relative;
+        width: fit-content;
+        height: 100%;
+    }
+    
+    .cart {
+        display: flex;
+    }
+    
+
+}
+
+/* ipad pro screens & laptop */
+@media only screen and (min-width:49.0em) and (max-width:64em) {
+
+}
+
+/* large screens : Desktop and 4k screens */
+@media only screen and (min-width:64.063em) and (max-width:90.0em) {
+    
+
+}
+
+
+/* 5k screens and above */
+@media only screen and (min-width:91.0em) {
+    
 }

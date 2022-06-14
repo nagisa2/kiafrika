@@ -21,7 +21,7 @@
         <h3>{{ serviceCompany }}</h3>
         <div class="myservice-details">
           <MyRating :ratings="serviceRating" />
-          <div class="myservice-btn">add to cart</div>
+          <div class="myservice-btn">Add to cart</div>
         </div>
       </div>
     </div>

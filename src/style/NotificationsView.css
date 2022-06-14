@@ -1,3 +1,4 @@
+@media screen {
 .notification-container {
     display: grid;
     padding-top: 40vh;
@@ -5,10 +6,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .default h1 {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
 }
 
 .notification {
@@ -23,10 +25,27 @@
 
 .notification h1 {
     text-transform: capitalize;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .notification span {
     text-transform: capitalize;
-    font-size: 1rem;
+    font-size: .7rem;
+}
+}
+
+@media only screen and (min-width:49.0em) {
+
+    
+    .default h1 {
+        font-size: 2.2rem;
+    }
+    
+    .notification h1 {
+        font-size: 1.4rem;
+    }
+    
+    .notification span {
+        font-size: 1rem;
+    }
 }
